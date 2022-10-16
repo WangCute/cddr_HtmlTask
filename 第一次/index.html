@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唉</title>
+</head>
+<body>
+    <div width="100%" align="center">
+        <form>
+            <table width="290px" border="1" bgcolor="lightgrey">
+                <tr>
+                    <td align="center" colspan="2"><h3>用户信息填写</h3></td>
+                </tr>
+                <tr>
+                    <td width="100px">用户名：</td>
+                    <td><input type="text" name="myname" placeholder="用户名" /></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td>
+                        <label><input type="radio" name="sex" />男</label>
+                        <label><input type="radio" name="sex" />女</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>年龄</td>
+                    <td><input type="number" name="age" placeholder="年龄" /></td>
+                </tr>
+                <tr>
+                    <td>兴趣爱好：</td>
+                    <td>
+                    <label><input type="checkbox" />球类运动</label>
+                    <label><input type="checkbox" />旅行摄影</label><br/>
+                    <label><input type="checkbox" />宅家刷剧</label>
+                    <label><input type="checkbox" />躺平摆烂</label>
+                    <input type="text" placeholder="其他兴趣爱好" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>学历：</td>
+                    <td>
+                        <select name="education">
+                            <option value="">--请选择--</option>
+                            <option value="1">大专</option>
+                            <option value="2">本科</option>
+                            <option value="3">研究生</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>个人简介：</td>
+                    <td><textarea name="my" rows="10" placeholder="个人简介"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="reset" value="重置" />
+                        <input type="submit" value="提交" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

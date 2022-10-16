@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <title>index</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: #0599e3;
+            transition: width 2s;
+        }
+        .div1:hover{
+            width: 300px;
+            animation: image 2s;
+            animation-fill-mode:forwards; 
+        }
+        .iocn{
+            color: white;
+            font-size: 50px;
+            position: relative;
+            top: 20px;  
+        }
+        @keyframes image{
+            100%{padding-left: 240px;}
+        }
+        .text1{
+            position: absolute;
+            top: 30px;
+            font-size: 20px;
+            color: white;
+        }
+
+
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            transition: width 2s;
+        }
+        .div2:hover{
+            width: 300px;
+            animation: image 2s;
+            animation-fill-mode:forwards; 
+        }
+        .iocn2{
+            color: white;
+            font-size: 50px;
+            position: relative;
+            top: 20px;  
+        }
+        .text2{
+            position: absolute;
+            top: 130px;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <span class="text1">访客 Vistor</span>
+    <div class="div1">
+        <span class="glyphicon glyphicon-globe iocn"></span>
+    </div>
+    <span class="text2">学生 Student</span>
+    <div class="div2">
+        <span class="glyphicon glyphicon-user iocn2"></span>
+    </div>
+</body>
+</html>
