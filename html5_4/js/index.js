@@ -1,13 +1,8 @@
-function shiqi(x){
+function gaibian(x){
     x.style.display="block";
-    document.getElementById("wenzi").innerHTML=document.getElementById("shuru").value;
+    x.innerHTML="你写了什么！";
 }
-function guanbi(x){
+function dianji(x){
     x.style.display="none";
 }
-function jianpan(x){
-    if(event.keyCode==13){
-        x.style.display="block";
-        document.getElementById("wenzi").innerHTML=document.getElementById("shuru").value;
-    }
-}
+
