@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>主页面</title>
+		<script>
+			function opresgister(){
+			   mywindow=window.open('register.html','','width=300,height=200');
+			   mywindow.moveTo(200,200);
+			   mywindow.focus();
+			}
+			function oplogin(){
+				mywindow=window.open('login.html','','width=300px,height=200px');
+				mywindow.moveTo(500,200);
+				mywindow.focus();
+			}
+		</script>
+	</head>
+	<body>
+		<a href="#" onclick="opresgister()">注册</a>&nbsp;|&nbsp;<a href="#" onclick="oplogin()">登录</a>
+		<h4>这是主页面</h4>
+	</body>
+</html>
