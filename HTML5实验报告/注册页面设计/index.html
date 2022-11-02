@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+      textarea{
+          width: 300px;
+          height: 100px;
+      }
+      form{
+        padding: 10px;
+        width: 310px;
+        border: 1px solid gainsboro;
+      }
+    </style>
+</head>
+<body>
+    <form>
+        姓名: <input type="text" name="firstname"><br/><br/>
+        年龄: <input type="number" name="age" min="0"><br/><br/>
+        性别：<input type="radio" name="men" value="men"><img src="images/men.jpg"/>男士
+              <input type="radio" name="women" value="women"><img src="images/women.jpg"/>女士<br/><br/>
+        生日: <select name="cars">
+                <option value="volvo">请选择年份</option>
+              </select>
+              <select name="cars">
+                <option value="volvo">请选择月份</option>
+              </select>
+              <select name="cars">
+                <option value="volvo">请选择日</option>
+              </select><br/><br/>
+        爱好: <input type="checkbox" name="vehicle" value="Bike">阅读
+              <input type="checkbox" name="vehicle" value="Car">跑步
+              <input type="checkbox" name="vehicle" value="Bike">游泳
+              <input type="checkbox" name="vehicle" value="Car">登山<br/><br/>
+        个人介绍: <br/><br/>
+        <textarea placeholder="请输入你的个人介绍......"></textarea><br/><br/>
+        <input type="checkbox" name="vehicle" value="Bike">阅读我同意信息录入<br/><br/> 
+        <input type="submit" value="立刻注册"><input style="margin-left: 30px;" type="reset" value="重新输入">
+    </form>
+</body>
+</html>
