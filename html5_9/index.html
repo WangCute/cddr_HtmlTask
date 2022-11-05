@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/js.js"></script>
+    <title>index</title>
+    <style>
+        span{
+            color: red;
+        }
+        label>span{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>
+            <span>姓名：</span>
+            <input type="text" id="name" onkeyup="onName(nameSpan)" placeholder="请输入姓名" />
+        </label>
+        <span id="nameSpan">*</span>
+        <br/>
+        <label>
+            <span>密码：</span>
+            <input type="password" id="password" onkeyup="onPasswor(passwordSpan)" placeholder="请输入密码" />
+        </label>
+        <span id="passwordSpan">*</span>
+        <br/>
+        <label>
+            <span>性别：</span>
+            <input type="radio" onclick="onsex(sexSpan)" name="sex">男
+            <input type="radio" onclick="onsex(sexSpan)" name="sex">女
+        </label>
+        <span id="sexSpan">*</span>
+        <br/>
+        <label>
+            <span>血型：</span>
+            <input type="radio" onclick="onblood(bloodSpan)" name="blood">O
+            <input type="radio" onclick="onblood(bloodSpan)" name="blood">A
+            <input type="radio" onclick="onblood(bloodSpan)" name="blood">B
+            <input type="radio" onclick="onblood(bloodSpan)" name="blood">AB
+        </label>
+        <span id="bloodSpan">*</span>
+        <br/>
+        <label>
+            <span>性格：</span>
+            <input type="checkbox" onclick="onxg(xgSpan)">热情大方
+            <input type="checkbox" onclick="onxg(xgSpan)">温柔体贴
+            <input type="checkbox" onclick="onxg(xgSpan)">多情善感
+        </label>
+        <span id="xgSpan">*</span>
+        <br/>
+        <label>
+            <span>文件：</span>
+            <input type="file" onclick="onwj(wjSpan)" />
+        </label>
+        <span id="wjSpan">*</span>
+        <br/>
+        <label>
+            <span>简介：</span>
+            <textarea placeholder="描述一下自己呗" id="ms" onkeyup="onms(msSpan)"></textarea>
+        </label>
+        <span id="msSpan">*</span>
+        <br/>
+        <label>
+            <span>城市：</span>
+            <select name="place">
+                <option value="beijing">北京市</option>
+                <option value="shengzhengshi">深圳市</option>
+                <option value="cds">成都市</option>
+                <option value="guangzhoshi">广州市</option>
+            </select>
+        </label>
+        <br/><br/>
+        <input type="submit" value="提交"/>
+        <input type="reset" value="重置"/>
+    </form>
+</body>
+</html>
