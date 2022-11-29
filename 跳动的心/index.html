@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跳动的♥</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="MyCanvas" width="400" height="400"></canvas>
+
+    <script>
+        let MyCanvas = document.getElementById("MyCanvas");
+        let ctx = MyCanvas.getContext("2d");
+        let img = new Image();
+        img.src = "images/love.png";
+
+        let w = MyCanvas.offsetWidth;
+        let h = MyCanvas.offsetHeight;
+        let scaleW;
+        let scaleH;
+        let scale = 0.5;
+
+        function imgFun() {
+            scaleW = w * scale;
+            scaleH = h * scale;
+            ctx.drawImage(img,(-scaleW + w)/2,(-scaleH + h)/2,scaleW,scaleH);
+        }
+
+        function scaleTime() {
+            if(scale > 0.7){
+                ctx.clearRect(0,0,w,h);
+                scale = 0.5;
+            }
+            scale += 0.2;
+            imgFun();
+        }
+        
+        img.onload = function() {
+            setInterval(scaleTime,500);
+        }
+    </script>
+</body>
+</html>
